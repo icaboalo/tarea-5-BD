@@ -46,5 +46,10 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
+
+        private void carrerasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmCarreras().Show();
+        }
     }
 }
