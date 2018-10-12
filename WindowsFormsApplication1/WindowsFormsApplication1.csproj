@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64C78398-F8B3-4B6B-8D63-781CC1E842A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GestorBD">
+      <HintPath>X:\BD\Programas\GestorBD\bin\Debug\GestorBD.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dsArea.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsArea.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsCampus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCampus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsCarr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCarr.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsImp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsImp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsInstitucion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInstitucion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsOfrece.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOfrece.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsServicios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsServicios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsTiene.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTiene.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Edicion\FrmInstituciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edicion\FrmInstituciones.Designer.cs">
+      <DependentUpon>FrmInstituciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edicion\FrmServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edicion\FrmServicios.Designer.cs">
+      <DependentUpon>FrmServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultas.Designer.cs">
+      <DependentUpon>FrmConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProgramasAlm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProgramasAlm.Designer.cs">
+      <DependentUpon>FrmProgramasAlm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Edicion\FrmInstituciones.resx">
+      <DependentUpon>FrmInstituciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edicion\FrmServicios.resx">
+      <DependentUpon>FrmServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultas.resx">
+      <DependentUpon>FrmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgramasAlm.resx">
+      <DependentUpon>FrmProgramasAlm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="dsArea.xsc">
+      <DependentUpon>dsArea.xsd</DependentUpon>
+    </None>
+    <None Include="dsArea.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsArea.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsArea.xss">
+      <DependentUpon>dsArea.xsd</DependentUpon>
+    </None>
+    <None Include="dsCampus.xsc">
+      <DependentUpon>dsCampus.xsd</DependentUpon>
+    </None>
+    <None Include="dsCampus.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCampus.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsCampus.xss">
+      <DependentUpon>dsCampus.xsd</DependentUpon>
+    </None>
+    <None Include="dsCarr.xsc">
+      <DependentUpon>dsCarr.xsd</DependentUpon>
+    </None>
+    <None Include="dsCarr.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCarr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsCarr.xss">
+      <DependentUpon>dsCarr.xsd</DependentUpon>
+    </None>
+    <None Include="dsImp.xsc">
+      <DependentUpon>dsImp.xsd</DependentUpon>
+    </None>
+    <None Include="dsImp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsImp.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsImp.xss">
+      <DependentUpon>dsImp.xsd</DependentUpon>
+    </None>
+    <None Include="dsInstitucion.xsc">
+      <DependentUpon>dsInstitucion.xsd</DependentUpon>
+    </None>
+    <None Include="dsInstitucion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInstitucion.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsInstitucion.xss">
+      <DependentUpon>dsInstitucion.xsd</DependentUpon>
+    </None>
+    <None Include="dsOfrece.xsc">
+      <DependentUpon>dsOfrece.xsd</DependentUpon>
+    </None>
+    <None Include="dsOfrece.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOfrece.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsOfrece.xss">
+      <DependentUpon>dsOfrece.xsd</DependentUpon>
+    </None>
+    <None Include="dsServicios.xsc">
+      <DependentUpon>dsServicios.xsd</DependentUpon>
+    </None>
+    <None Include="dsServicios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsServicios.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsServicios.xss">
+      <DependentUpon>dsServicios.xsd</DependentUpon>
+    </None>
+    <None Include="dsTiene.xsc">
+      <DependentUpon>dsTiene.xsd</DependentUpon>
+    </None>
+    <None Include="dsTiene.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTiene.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsTiene.xss">
+      <DependentUpon>dsTiene.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
