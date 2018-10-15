@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GestorBD">
-      <HintPath>..\..\..\..\..\BD\Programas\GestorBD\bin\Debug\GestorBD.dll</HintPath>
+      <HintPath>X:\BD\Programas\GestorBD\bin\Debug\GestorBD.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

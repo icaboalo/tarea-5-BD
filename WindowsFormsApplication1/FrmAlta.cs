@@ -22,11 +22,12 @@ namespace WindowsFormsApplication1
         DataSet dsInst = new DataSet();
         DataSet dsCarr = new DataSet();
         DataSet dsCamp = new DataSet();
-
+        DataSet dsServ = new DataSet();
 
         string cadSql;
         int idCamp;
         int idInst;
+        
 
         private void FrmAlta_Load(object sender, EventArgs e)
         {
@@ -107,25 +108,21 @@ namespace WindowsFormsApplication1
             }
 
             else {
-                boton2 = MessageBox.Show("Quiere dar de alta servicios en el campus: = " + tbC1.Text + " de la intitución: " + cbInst.Text,
+                boton2 = MessageBox.Show("Quiere dar de alta servicios en el campus: " + tbC1.Text + " de la intitución: " + cbInst.Text,
               "Alta Servicios", MessageBoxButtons.YesNo);
 
                 //Si se selecciona el botón Yes, del MessageBox.
                 if (boton2 == DialogResult.Yes) {
                     lbS.Visible = true;
-                    ls2.Visible = true;
-                    ls3.Visible = true;
-                    tBs1.Visible = true;
-                    comboBox1.Visible = true;
                     comboBox2.Visible = true;
                     bS.Visible = true;
+                    //Se llena el cb de servicios disponibles
+                    cadSql = "select distinct nomServ from Servicios";
+                    GestorBD.consBD(cadSql, dsServ, "nomServ");
+                    Varios.Comunes.cargaCombo(comboBox2, dsServ, "nomServ", "nomserv");
                 }
                 else {
                     lbS.Visible = false;
-                    ls2.Visible = false;
-                    ls3.Visible = false;
-                    tBs1.Visible = false;
-                    comboBox1.Visible = false;
                     comboBox2.Visible = false;
                     bS.Visible = false;
 
@@ -151,17 +148,6 @@ namespace WindowsFormsApplication1
                     tbC5.Text = "Estado";
                 }
                 }
-
-            ////Boton para preguntarle al ususario si quiere dar de alta servicios en el nuevo campus
-            //botón2 = MessageBox.Show("Quiere dar de alta Servicios en el campus: " + tbC1.Text.ToString() + " de la intitución: " + cbInst.Text,
-            //  "Alta Servicios", MessageBoxButtons.YesNo);
-
-            ////Si se selecciona el botón Yes, del MessageBox.
-            //if (botón == DialogResult.Yes)
-            //{
-            //    //Muestra los canmpos para dar de alta un servicio
-
-            //}
         }
 
         private void btAlta_Click(object sender, EventArgs e) {
@@ -184,18 +170,18 @@ namespace WindowsFormsApplication1
                 label2.Visible = false;
                 cbCarr.Visible = false;
                 btAlta.Visible = false;
-                boton3 = MessageBox.Show("Quiere dar de alta servicios en el campus: = " + tbC1.Text + " de la intitución: " + cbInst.Text,
+                boton3 = MessageBox.Show("Quiere dar de alta servicios en el campus: " + tbC1.Text + " de la intitución: " + cbInst.Text,
               "Alta Servicios", MessageBoxButtons.YesNo);
 
                 //Si se selecciona el botón Yes, del MessageBox.
                 if (boton3 == DialogResult.Yes) {
                     lbS.Visible = true;
-                    ls2.Visible = true;
-                    ls3.Visible = true;
-                    tBs1.Visible = true;
-                    comboBox1.Visible = true;
                     comboBox2.Visible = true;
                     bS.Visible = true;
+                    //Se llena el cb de servicios disponibles
+                    cadSql = "select distinct nomServ from Servicios";
+                    GestorBD.consBD(cadSql, dsServ, "nomServ");
+                    Varios.Comunes.cargaCombo(comboBox2, dsServ, "nomServ", "nomserv");
                 }
             
             }
@@ -203,24 +189,30 @@ namespace WindowsFormsApplication1
 
         private void bS_Click(object sender, EventArgs e) {
             DialogResult boton;
+            int idServ;
 
+            //Recuperamos el id siguiente para campus
+            cadSql = "select idSer as idS from Servicios where nomServ ='"+ comboBox2.Text+"'";
+            GestorBD.consBD(cadSql, dsServ, "Id");
+            idServ = Convert.ToInt32(dsServ.Tables["Id"].Rows[0]["idS"]);
+            //insertar en ofrece
+            cadSql = "insert into ofrece values (" + idServ +", "+ idCamp+")";
+            GestorBD.altaBD(cadSql);
 
-            //Boton para preguntarle al ususario si quiere dar de alta carreras en el nuevo campus
 
             boton = MessageBox.Show("Quiere dar de alta otro servicio",
               "Alta Servicios", MessageBoxButtons.YesNo);
 
             //Si se selecciona el botón Yes, del MessageBox.
             if (boton == DialogResult.Yes) {
-                tBs1.Text = "Nombre";
-
+                comboBox2.Visible = true;
             }
             else {
                 lbS.Visible = false;
-                ls2.Visible = false;
-                ls3.Visible = false;
-                tBs1.Visible = false;
-                comboBox1.Visible = false;
+                //ls2.Visible = false;
+                //ls3.Visible = false;
+                //tBs1.Visible = false;
+                //comboBox1.Visible = false;
                 comboBox2.Visible = false;
                 bS.Visible = false;
 
