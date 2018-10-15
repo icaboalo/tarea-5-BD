@@ -10,20 +10,26 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
+
     public partial class FrmProgramasAlm : Form
     {
-        GestorBD.GestorBD GestorBD;
-        DataSet dsInst = new DataSet(), dsCampus = new DataSet();
-        DataSet dsFolio = new DataSet();
-        DataRow fila;
-        String cadSql;
-        Varios.Comunes comunes = new Varios.Comunes();
 
-        const int OK = 1;
         public FrmProgramasAlm()
         {
             InitializeComponent();
         }
+
+        GestorBD.GestorBD GestorBD;
+        DataSet dsInst = new DataSet();
+        DataSet dsCampus = new DataSet();
+        DataSet dsFolio = new DataSet();
+
+        String cadSql;
+
+        Varios.Comunes1 comunes = new Varios.Comunes1();
+
+
+        
 
         private void FrmProgramasAlm_Load(object sender, EventArgs e)
         {
@@ -31,13 +37,18 @@ namespace WindowsFormsApplication1
             GestorBD = new GestorBD.GestorBD("MSDAORA", "bd07", "fercab", "oracle");
 
             //2- Llenar CB de instituciones
-            cadSql = "select distinct nomIns from Institucion";
-            GestorBD.consBD(cadSql, dsInst, "Institucion");
-            Varios.Comunes.cargaCombo(cbInst, dsInst, "Institucion", "nomIns");
+            cadSql = "select distinct Siglas from Institucion";
+            GestorBD.consBD(cadSql, dsInst, "Ins");
+            comunes.cargaCombo(cbInst, dsInst, "Ins", "Siglas");
             //CB campus
-            cadSql = "select distinct nomCamp from Campus c, Institucion i where i.nomIns ='" + cbInst.Text + "' and i.idInst = c.idInst";
+            cadSql = "select distinct nomCamp from Campus c, Institucion i where i.Siglas ='" + cbInst.Text + "' and i.idInst = c.idInst";
             GestorBD.consBD(cadSql, dsCampus, "Campus");
-            Varios.Comunes.cargaCombo(cbCampus, dsCampus, "Campus", "nomCamp");
+            comunes.cargaCombo(cbCampus, dsCampus, "Campus", "nomCamp");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
 
         }
     }

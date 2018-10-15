@@ -31,8 +31,8 @@ namespace WindowsFormsApplication1
 
             gestorBD.consBD("select distinct ciudad from campus", dsCiudades, "Ciudades");
             gestorBD.consBD("select Nomcarr from carr", dsCarreras, "Carreras");
-            Varios.Comunes.cargaCombo(cbCarrera, dsCarreras, "Carreras", "Nomcarr");
-            Varios.Comunes.cargaCombo(cbCiudad, dsCiudades, "Ciudades", "ciudad");
+            Varios.Comunes1.cargaCombo(cbCarrera, dsCarreras, "Carreras", "Nomcarr");
+            Varios.Comunes1.cargaCombo(cbCiudad, dsCiudades, "Ciudades", "ciudad");
         }
     }
 }

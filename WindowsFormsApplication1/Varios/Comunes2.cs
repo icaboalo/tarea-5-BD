@@ -1,21 +1,21 @@
-﻿using System;
+﻿using System.Data;
+using System.Windows.Forms;		//Para que se pueda usar el tipo: ComboBox.
+using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace WindowsFormsApplication1.Varios
+namespace ClienteServidor.Varios
 {
-    class Comunes
+    class Comunes2
     {
 
         /* Agrega en un ComboBox (primer parámetro), los datos que están en un DataSet
-       (segundo parámetro), en la tabla y columna dadas (tercer y cuarto parámetros).
-       Los datos se agregan sin repetición.
-    */
-        public static void cargaCombo(ComboBox cbo, DataSet ds, String tabla, String col)
+           (segundo parámetro), en la tabla y columna dadas (tercer y cuarto parámetros).
+           Los datos se agregan sin repetición.
+        */
+        public void cargaCombo(ComboBox cbo, DataSet ds, String tabla, String col)
         {
             DataTable tabResul;
 
@@ -26,5 +26,6 @@ namespace WindowsFormsApplication1.Varios
                 if (!cbo.Items.Contains(fila[col].ToString().Trim()))
                     cbo.Items.Add(fila[col].ToString().Trim());
         }
+
     }
 }

@@ -128,7 +128,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Varios\Comunes.cs" />
+    <Compile Include="Varios\Comunes1.cs" />
+    <Compile Include="Varios\Comunes2.cs" />
     <EmbeddedResource Include="Edicion\FrmInstituciones.resx">
       <DependentUpon>FrmInstituciones.cs</DependentUpon>
     </EmbeddedResource>
