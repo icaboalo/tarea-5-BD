@@ -23,7 +23,10 @@ namespace WindowsFormsApplication1
         DataSet dsCarr = new DataSet();
         DataSet dsCamp = new DataSet();
 
+
         string cadSql;
+        int idCamp;
+        int idInst;
 
         private void FrmAlta_Load(object sender, EventArgs e)
         {
@@ -54,8 +57,7 @@ namespace WindowsFormsApplication1
 
             DialogResult boton;
             DialogResult boton2;
-            int idCamp;
-            int idInst;
+            
             
             //Recuperamos el id siguiente para campus
             cadSql = "Select max(IdCamp) as ma from Campus";
@@ -165,6 +167,11 @@ namespace WindowsFormsApplication1
         private void btAlta_Click(object sender, EventArgs e) {
             DialogResult boton2;
             DialogResult boton3;
+
+            //Da de alta la carrera
+            cadSql = "insert into imp ";
+            GestorBD.consBD(cadSql, dsCarr, "NomCarr");
+            Varios.Comunes.cargaCombo(cbCarr, dsCarr, "NomCarr", "NomCarr");
 
 
             ////Boton para preguntarle al ususario si quiere dar de alta servicios en el nuevo campus

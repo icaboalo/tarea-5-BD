@@ -47,6 +47,10 @@
             this.ls2 = new System.Windows.Forms.Label();
             this.ls3 = new System.Windows.Forms.Label();
             this.bS = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -154,7 +158,7 @@
             // 
             // btAlta
             // 
-            this.btAlta.Location = new System.Drawing.Point(260, 163);
+            this.btAlta.Location = new System.Drawing.Point(738, 162);
             this.btAlta.Name = "btAlta";
             this.btAlta.Size = new System.Drawing.Size(75, 23);
             this.btAlta.TabIndex = 11;
@@ -228,7 +232,7 @@
             // 
             // bS
             // 
-            this.bS.Location = new System.Drawing.Point(665, 244);
+            this.bS.Location = new System.Drawing.Point(738, 237);
             this.bS.Name = "bS";
             this.bS.Size = new System.Drawing.Size(75, 23);
             this.bS.TabIndex = 19;
@@ -237,11 +241,49 @@
             this.bS.Visible = false;
             this.bS.Click += new System.EventHandler(this.bS_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(231, 173);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Duración:";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(307, 164);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 21;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(466, 173);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Créditos";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(529, 162);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.TabIndex = 23;
+            // 
             // FrmAlta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(836, 499);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.bS);
             this.Controls.Add(this.ls3);
             this.Controls.Add(this.ls2);
@@ -290,5 +332,9 @@
         private System.Windows.Forms.Label ls2;
         private System.Windows.Forms.Label ls3;
         private System.Windows.Forms.Button bS;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }
