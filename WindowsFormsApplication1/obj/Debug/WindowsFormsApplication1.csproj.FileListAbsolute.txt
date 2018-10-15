@@ -44,7 +44,6 @@ C:\Users\ICABOA\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFor
 C:\Users\ICABOA\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 C:\Users\ICABOA\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
 C:\Users\ICABOA\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\GestorBD.pdb
-<<<<<<< HEAD
 C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
@@ -61,20 +60,3 @@ C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\Window
 C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmAlta.resources
-=======
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\GestorBD.pdb
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Edicion.FrmInstituciones.resources
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Edicion.FrmServicios.resources
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmCarreras.resources
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmConsultas.resources
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmProgramasAlm.resources
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
-C:\Users\BALTAMIRG\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
->>>>>>> 73582c7e568e87050837bed4804e080ef5dc08fa
