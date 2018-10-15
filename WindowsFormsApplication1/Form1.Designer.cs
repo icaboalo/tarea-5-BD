@@ -34,8 +34,9 @@
             this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programasAlmacenadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carrerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.altasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             this.consultasToolStripMenuItem,
             this.programasAlmacenadosToolStripMenuItem,
             this.carrerasToolStripMenuItem,
+            this.altasToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -90,6 +92,13 @@
             this.programasAlmacenadosToolStripMenuItem.Text = "Programas Almacenados";
             this.programasAlmacenadosToolStripMenuItem.Click += new System.EventHandler(this.programasAlmacenadosToolStripMenuItem_Click);
             // 
+            // carrerasToolStripMenuItem
+            // 
+            this.carrerasToolStripMenuItem.Name = "carrerasToolStripMenuItem";
+            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.carrerasToolStripMenuItem.Text = "Carreras";
+            this.carrerasToolStripMenuItem.Click += new System.EventHandler(this.carrerasToolStripMenuItem_Click);
+            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
@@ -97,12 +106,12 @@
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // carrerasToolStripMenuItem
+            // altasToolStripMenuItem
             // 
-            this.carrerasToolStripMenuItem.Name = "carrerasToolStripMenuItem";
-            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.carrerasToolStripMenuItem.Text = "Carreras";
-            this.carrerasToolStripMenuItem.Click += new System.EventHandler(this.carrerasToolStripMenuItem_Click);
+            this.altasToolStripMenuItem.Name = "altasToolStripMenuItem";
+            this.altasToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.altasToolStripMenuItem.Text = "Altas";
+            this.altasToolStripMenuItem.Click += new System.EventHandler(this.altasToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -112,7 +121,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Instituciones Educativas";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -130,6 +139,7 @@
         private System.Windows.Forms.ToolStripMenuItem programasAlmacenadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carrerasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem altasToolStripMenuItem;
     }
 }
 

@@ -49,7 +49,14 @@ namespace WindowsFormsApplication1
 
         private void carrerasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new FrmCarreras().Show();
+            FrmCarreras fc = new FrmCarreras();
+            fc.Show();
+        }
+
+        private void altasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAlta fa = new FrmAlta();
+            fa.Show();
         }
     }
 }
