@@ -22,7 +22,7 @@ namespace WindowsFormsApplication1
         DataSet dsInst = new DataSet();
         DataSet dsCarr = new DataSet();
         DataSet dsCamp = new DataSet();
-
+        DataSet dsImparte = new DataSet();
 
         string cadSql;
         int idCamp;
@@ -48,6 +48,7 @@ namespace WindowsFormsApplication1
             tbC4.Visible = true;
             tbC5.Visible = true;
             cb1.Visible = true;
+            cb1.Enabled = true;
 
 
         }
@@ -57,6 +58,8 @@ namespace WindowsFormsApplication1
 
             DialogResult boton;
             DialogResult boton2;
+
+            cb1.Enabled = false;
             
             
             //Recuperamos el id siguiente para campus
@@ -93,16 +96,23 @@ namespace WindowsFormsApplication1
             //Si se selecciona el botón Yes, del MessageBox.
             if (boton == DialogResult.Yes)
             {
-                //Muestra los canmpos para dar de alta una carrera
+                //Muestra los canmpos para dar de alta una carrera y carga el combobox
                 label2.Visible = true;
                 cbCarr.Visible = true;
                 btAlta.Visible = true;
+                label3.Visible = true;
+                label4.Visible = true;
+                comboBox3.Visible = true;
+                comboBox4.Visible = true;
+
 
                 //Se llena el cb de carrera con las carreras existentes, si la carrera no está, eso corresponde a otro problema 
                 //y debería haber otro alta de carreras pero el problema no pide eso.
                 cadSql = "select distinct NomCarr from Carr";
                 GestorBD.consBD(cadSql, dsCarr, "NomCarr");
                 Varios.Comunes.cargaCombo(cbCarr, dsCarr, "NomCarr", "NomCarr");
+
+                
 
             }
 
@@ -167,11 +177,16 @@ namespace WindowsFormsApplication1
         private void btAlta_Click(object sender, EventArgs e) {
             DialogResult boton2;
             DialogResult boton3;
+            int claveCarr;
+
+            cadSql = "select idcarr from carr where nomCarr like'"+cbCarr.Text+"%'";
+            GestorBD.consBD(cadSql, dsImparte, "idCa");
+            claveCarr = Convert.ToInt32(dsImparte.Tables["idCa"].Rows[0]["idCarr"]);
+
 
             //Da de alta la carrera
-            cadSql = "insert into imp ";
-            GestorBD.consBD(cadSql, dsCarr, "NomCarr");
-            Varios.Comunes.cargaCombo(cbCarr, dsCarr, "NomCarr", "NomCarr");
+            cadSql = "insert into imp values("+idCamp+ "," + claveCarr + "," + comboBox3.Text+ "," + comboBox4.Text + ")";
+            GestorBD.altaBD(cadSql);
 
 
             ////Boton para preguntarle al ususario si quiere dar de alta servicios en el nuevo campus
@@ -184,6 +199,11 @@ namespace WindowsFormsApplication1
                 label2.Visible = false;
                 cbCarr.Visible = false;
                 btAlta.Visible = false;
+                label3.Visible = false;
+                label4.Visible = false;
+                comboBox3.Visible = false;
+                comboBox4.Visible = false;
+
                 boton3 = MessageBox.Show("Quiere dar de alta servicios en el campus: = " + tbC1.Text + " de la intitución: " + cbInst.Text,
               "Alta Servicios", MessageBoxButtons.YesNo);
 
@@ -196,6 +216,29 @@ namespace WindowsFormsApplication1
                     comboBox1.Visible = true;
                     comboBox2.Visible = true;
                     bS.Visible = true;
+                }
+                else
+                {
+                    //Regresa todos los ajustes a default para poder dar otra alta
+                    lbC1.Visible = false;
+                    tbC1.Visible = false;
+                    tbC2.Visible = false;
+                    tbC3.Visible = false;
+                    tbC4.Visible = false;
+                    tbC5.Visible = false;
+                    cb1.Visible = false;
+                    cbInst.Enabled = true;
+                    tbC1.Enabled = true;
+                    tbC2.Enabled = true;
+                    tbC3.Enabled = true;
+                    tbC4.Enabled = true;
+                    tbC5.Enabled = true;
+                    cbInst.Enabled = true;
+                    tbC1.Text = "Nombre";
+                    tbC2.Text = "Domicilio";
+                    tbC3.Text = "Teléfono";
+                    tbC4.Text = "Ciudad";
+                    tbC5.Text = "Estado";
                 }
             
             }

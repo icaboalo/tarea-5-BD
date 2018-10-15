@@ -1,1 +1,17 @@
 C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\GestorBD.dll
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\bin\Debug\GestorBD.pdb
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Edicion.FrmInstituciones.resources
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Edicion.FrmServicios.resources
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmAlta.resources
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmCarreras.resources
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmConsultas.resources
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmProgramasAlm.resources
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

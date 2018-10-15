@@ -249,14 +249,22 @@
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 20;
             this.label3.Text = "Duración:";
+            this.label3.Visible = false;
             // 
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
             this.comboBox3.Location = new System.Drawing.Point(307, 164);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 21;
+            this.comboBox3.Visible = false;
             // 
             // label4
             // 
@@ -266,14 +274,24 @@
             this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 22;
             this.label4.Text = "Créditos";
+            this.label4.Visible = false;
             // 
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "1",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
             this.comboBox4.Location = new System.Drawing.Point(529, 162);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 21);
             this.comboBox4.TabIndex = 23;
+            this.comboBox4.Visible = false;
             // 
             // FrmAlta
             // 
