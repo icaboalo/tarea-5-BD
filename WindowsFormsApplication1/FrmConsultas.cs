@@ -27,15 +27,14 @@ namespace WindowsFormsApplication1
 
         private void FrmConsultas_Load(object sender, EventArgs e)
         {
+       //Conectar a BD
             GestorBD = new GestorBD.GestorBD("MSDAORA", "bd07", "fercab", "oracle");
-            
         }
-
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string op = comboBox1.Text;
-
+        //Revisar cual consulta quiere hacer el usuario
             switch (op)
             {
                 case "Instituciones por ciudad":
@@ -68,9 +67,5 @@ namespace WindowsFormsApplication1
                     break;
             }
         }
-
-
-
-
     }
 }
