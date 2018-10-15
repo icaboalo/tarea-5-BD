@@ -60,3 +60,4 @@ C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\Window
 C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\MFERNANDVE\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmAlta.resources
+C:\Users\sdist\Desktop\tarea-5-BD\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmAlta.resources
