@@ -40,6 +40,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbCarr = new System.Windows.Forms.ComboBox();
             this.btAlta = new System.Windows.Forms.Button();
+            this.lbS = new System.Windows.Forms.Label();
+            this.tBs1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.ls2 = new System.Windows.Forms.Label();
+            this.ls3 = new System.Windows.Forms.Label();
+            this.bS = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,11 +87,11 @@
             // 
             // tbC3
             // 
-            this.tbC3.Location = new System.Drawing.Point(311, 94);
+            this.tbC3.Location = new System.Drawing.Point(318, 90);
             this.tbC3.Name = "tbC3";
             this.tbC3.Size = new System.Drawing.Size(100, 20);
             this.tbC3.TabIndex = 4;
-            this.tbC3.Text = "Teléfono";
+            this.tbC3.Text = "55555555";
             this.tbC3.Visible = false;
             // 
             // tbC4
@@ -156,11 +163,92 @@
             this.btAlta.Visible = false;
             this.btAlta.Click += new System.EventHandler(this.btAlta_Click);
             // 
+            // lbS
+            // 
+            this.lbS.AutoSize = true;
+            this.lbS.Location = new System.Drawing.Point(20, 217);
+            this.lbS.Name = "lbS";
+            this.lbS.Size = new System.Drawing.Size(250, 13);
+            this.lbS.TabIndex = 12;
+            this.lbS.Text = "Llena los datos del servicio quie quieres dar de alta:";
+            this.lbS.Visible = false;
+            // 
+            // tBs1
+            // 
+            this.tBs1.Location = new System.Drawing.Point(23, 247);
+            this.tBs1.Name = "tBs1";
+            this.tBs1.Size = new System.Drawing.Size(100, 20);
+            this.tBs1.TabIndex = 13;
+            this.tBs1.Text = "Nombre";
+            this.tBs1.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Dentro del Campus",
+            "Fuera del Campus"});
+            this.comboBox1.Location = new System.Drawing.Point(214, 244);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 15;
+            this.comboBox1.Visible = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Si",
+            "No"});
+            this.comboBox2.Location = new System.Drawing.Point(456, 244);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 16;
+            this.comboBox2.Visible = false;
+            // 
+            // ls2
+            // 
+            this.ls2.AutoSize = true;
+            this.ls2.Location = new System.Drawing.Point(169, 247);
+            this.ls2.Name = "ls2";
+            this.ls2.Size = new System.Drawing.Size(37, 13);
+            this.ls2.TabIndex = 17;
+            this.ls2.Text = "Lugar:";
+            this.ls2.Visible = false;
+            // 
+            // ls3
+            // 
+            this.ls3.AutoSize = true;
+            this.ls3.Location = new System.Drawing.Point(377, 247);
+            this.ls3.Name = "ls3";
+            this.ls3.Size = new System.Drawing.Size(61, 13);
+            this.ls3.TabIndex = 18;
+            this.ls3.Text = "Costo Extra";
+            this.ls3.Visible = false;
+            // 
+            // bS
+            // 
+            this.bS.Location = new System.Drawing.Point(665, 244);
+            this.bS.Name = "bS";
+            this.bS.Size = new System.Drawing.Size(75, 23);
+            this.bS.TabIndex = 19;
+            this.bS.Text = "Listo";
+            this.bS.UseVisualStyleBackColor = true;
+            this.bS.Visible = false;
+            this.bS.Click += new System.EventHandler(this.bS_Click);
+            // 
             // FrmAlta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(836, 499);
+            this.Controls.Add(this.bS);
+            this.Controls.Add(this.ls3);
+            this.Controls.Add(this.ls2);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.tBs1);
+            this.Controls.Add(this.lbS);
             this.Controls.Add(this.btAlta);
             this.Controls.Add(this.cbCarr);
             this.Controls.Add(this.label2);
@@ -195,5 +283,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbCarr;
         private System.Windows.Forms.Button btAlta;
+        private System.Windows.Forms.Label lbS;
+        private System.Windows.Forms.TextBox tBs1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label ls2;
+        private System.Windows.Forms.Label ls3;
+        private System.Windows.Forms.Button bS;
     }
 }
