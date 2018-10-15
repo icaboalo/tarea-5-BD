@@ -92,7 +92,9 @@ namespace WindowsFormsApplication1
             cadSql = "select distinct Siglas from Institucion";
             GestorBD.consBD(cadSql, dsInst, "Ins");
             Varios.Comunes.cargaCombo(cbInst, dsInst, "Ins", "Siglas");
-            Varios.Comunes.cargaCombo(cbinst1, dsInst, "Ins", "Siglas");
+            cadSql = "select distinct NomIns from Institucion";
+            GestorBD.consBD(cadSql, dsInst, "Ins");
+            Varios.Comunes.cargaCombo(cbinst1, dsInst, "Ins", "NomIns");
         }
 
         private void cbInst_SelectedIndexChanged(object sender, EventArgs e)
@@ -105,13 +107,13 @@ namespace WindowsFormsApplication1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String nomI, nomC1, nomC2, grad, res;
+            String nomI, nomC1, nomC2, grado, res;
             OleDbCommand proc;
             OleDbParameter par;
 
             //1- Abrir la conexión a la BD.
             cnOracle = new OleDbConnection("Provider=MSDAORA; Data Source=oracle;" +
-              "User ID=bdalumno;Password=estudia");
+              "User ID=bd07;Password=fercab");
             cnOracle.Open();
             proc = new OleDbCommand();
             proc.Connection = cnOracle;
@@ -134,9 +136,13 @@ namespace WindowsFormsApplication1
             par = new OleDbParameter("nomCamp2", nomC2);
             proc.Parameters.Add(par);
 
+            grado = cbGrado.Text;
+            par = new OleDbParameter("grado", grado);
+            proc.Parameters.Add(par);
+
             //b) luego todos los de salida (uno en este caso):
-            par = new OleDbParameter("res", OleDbType.Integer, 4,
-              ParameterDirection.Output, false, 4, 0, "res", DataRowVersion.Current, 0);
+            par = new OleDbParameter("res", OleDbType.Char, 50,
+              ParameterDirection.Output, false, 4, 0, "res", DataRowVersion.Current, "");
             proc.Parameters.Add(par);
 
             //4- Ejecutar el procedimiento (en general: el subprograma).
@@ -161,7 +167,7 @@ namespace WindowsFormsApplication1
         private void cbinst1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //CB campus
-            cadSql = "select distinct nomCamp from Campus c, Institucion i where i.Siglas ='" + cbinst1.Text + "' and i.idInst = c.idInst";
+            cadSql = "select distinct nomCamp from Campus c, Institucion i where i.NomIns ='" + cbinst1.Text + "' and i.idInst = c.idInst";
             GestorBD.consBD(cadSql, dsCampus, "Campus");
             Varios.Comunes.cargaCombo(cbCampus1, dsCampus, "Campus", "nomCamp");
             Varios.Comunes.cargaCombo(cbCampus2, dsCampus, "Campus", "nomCamp");

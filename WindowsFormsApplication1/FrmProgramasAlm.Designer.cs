@@ -111,7 +111,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(183, 237);
+            this.label4.Location = new System.Drawing.Point(242, 238);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 13);
             this.label4.TabIndex = 7;
@@ -120,7 +120,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(363, 237);
+            this.label5.Location = new System.Drawing.Point(422, 238);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 13);
             this.label5.TabIndex = 8;
@@ -129,7 +129,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(512, 237);
+            this.label6.Location = new System.Drawing.Point(571, 238);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 13);
             this.label6.TabIndex = 9;
@@ -140,14 +140,14 @@
             this.cbinst1.FormattingEnabled = true;
             this.cbinst1.Location = new System.Drawing.Point(31, 285);
             this.cbinst1.Name = "cbinst1";
-            this.cbinst1.Size = new System.Drawing.Size(121, 21);
+            this.cbinst1.Size = new System.Drawing.Size(171, 21);
             this.cbinst1.TabIndex = 10;
             this.cbinst1.SelectedIndexChanged += new System.EventHandler(this.cbinst1_SelectedIndexChanged);
             // 
             // cbCampus1
             // 
             this.cbCampus1.FormattingEnabled = true;
-            this.cbCampus1.Location = new System.Drawing.Point(186, 284);
+            this.cbCampus1.Location = new System.Drawing.Point(245, 285);
             this.cbCampus1.Name = "cbCampus1";
             this.cbCampus1.Size = new System.Drawing.Size(121, 21);
             this.cbCampus1.TabIndex = 11;
@@ -155,7 +155,7 @@
             // cbCampus2
             // 
             this.cbCampus2.FormattingEnabled = true;
-            this.cbCampus2.Location = new System.Drawing.Point(366, 284);
+            this.cbCampus2.Location = new System.Drawing.Point(425, 285);
             this.cbCampus2.Name = "cbCampus2";
             this.cbCampus2.Size = new System.Drawing.Size(121, 21);
             this.cbCampus2.TabIndex = 12;
@@ -167,7 +167,7 @@
             "doctor",
             "licenciado",
             "maestria"});
-            this.cbGrado.Location = new System.Drawing.Point(515, 284);
+            this.cbGrado.Location = new System.Drawing.Point(574, 285);
             this.cbGrado.Name = "cbGrado";
             this.cbGrado.Size = new System.Drawing.Size(121, 21);
             this.cbGrado.TabIndex = 13;
