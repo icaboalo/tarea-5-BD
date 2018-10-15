@@ -41,6 +41,7 @@
             this.cbInst.Name = "cbInst";
             this.cbInst.Size = new System.Drawing.Size(121, 21);
             this.cbInst.TabIndex = 0;
+            this.cbInst.SelectedIndexChanged += new System.EventHandler(this.cbInst_SelectedIndexChanged);
             // 
             // cbCampus
             // 
@@ -80,6 +81,7 @@
             this.Controls.Add(this.cbInst);
             this.Name = "FrmProgramasAlm";
             this.Text = "FrmProgramasAlum";
+            this.Load += new System.EventHandler(this.FrmProgramasAlm_Load_1);
             this.ResumeLayout(false);
 
         }
